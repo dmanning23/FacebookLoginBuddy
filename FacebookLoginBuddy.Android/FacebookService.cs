@@ -13,7 +13,7 @@ namespace FacebookLoginLib.Android
 
 		public ICallbackManager CallbackManager;
 
-		public bool LoggedIn { get; private set; }
+		public bool LoggedIn => null == User;
 
 		public FacebookUser User { get; private set; }
 
@@ -38,7 +38,6 @@ namespace FacebookLoginLib.Android
 
 		public void Logout()
 		{
-			LoggedIn = false;
 			User = null;
 			LoginManager.Instance.LogOut();
 		}
@@ -105,7 +104,6 @@ namespace FacebookLoginLib.Android
 				}
 			}
 
-			LoggedIn = true;
 			User = new FacebookUser(id, AccessToken.CurrentAccessToken.Token, first_name, last_name, email, pictureUrl);
 			OnLoginSuccess?.Invoke(User);
 		}

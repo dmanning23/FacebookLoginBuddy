@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
-		<id>FacebookLoginBuddy</id>
-		<version>2.0.0</version>
-		<title>FacebookLoginBuddy</title>
+		<id>FBLoginBuddy</id>
+		<version>2.0.2</version>
+		<title>FBLoginBuddy</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
 		<projectUrl>https://github.com/dmanning23/FacebookLoginBuddy</projectUrl>
 		<licenseUrl>https://github.com/dmanning23/FacebookLoginBuddy/blob/master/LICENSE.txt</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>Authentication wrapper around the PlayFab Xamarin client SDK</description>
+		<description>Wrapper class for native Facebook sign-in on Xamarin mobile projects</description>
 		<releaseNotes />
 		<copyright>Copyright 2016</copyright>
 		<tags>android, ios, windows universal, monogame, xamarin</tags>

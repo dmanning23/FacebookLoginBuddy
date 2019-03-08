@@ -19,7 +19,7 @@ namespace FacebookLoginLib.iOS
 
 		private LoginManager LoginManager { get; set; }
 
-		public bool LoggedIn { get; private set; } = false;
+		public bool LoggedIn => null == User;
 
 		public FacebookUser User { get; private set; }
 
@@ -91,7 +91,6 @@ namespace FacebookLoginLib.iOS
 				}
 
 				//Grab the user and send the success event
-				LoggedIn = true;
 				User = new FacebookUser(id, AccessToken.CurrentAccessToken.TokenString, first_name, last_name, email, url);
 				OnLoginSuccess?.Invoke(User);
 			}
@@ -139,10 +138,9 @@ namespace FacebookLoginLib.iOS
 		public void Logout()
 		{
 			User = null;
-			LoggedIn = false;
 			LoginManager.LogOut();
 		}
-	}
 
-	#endregion //Methods
+		#endregion //Methods
+	}
 }
