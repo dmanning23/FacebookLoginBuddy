@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FacebookLoginBuddy.SharedProject", "FacebookLoginBuddy.SharedProject\FacebookLoginBuddy.SharedProject.shproj", "{21F9BF7C-3DBD-4B44-AE23-331045E80ECD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookLoginBuddy.iOS", "FacebookLoginBuddy.iOS\FacebookLoginBuddy.iOS.csproj", "{E71F3053-056C-4381-9638-048ED73BDFF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookLoginBuddy.Android", "FacebookLoginBuddy.Android\FacebookLoginBuddy.Android.csproj", "{D6881F93-23FB-402E-92C1-F761FBCD4769}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookLoginBuddy.WindowsDX", "FacebookLoginBuddy.WindowsDX\FacebookLoginBuddy.WindowsDX.csproj", "{DD82CC04-BB25-407A-B3B8-40573CE70F0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{33674A3C-902A-4BFC-8E57-1B3BA47A5F83}"
+	ProjectSection(SolutionItems) = preProject
+		buildNugetPackages.ps1 = buildNugetPackages.ps1
+		FacebookLoginBuddy.nuspec = FacebookLoginBuddy.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		FacebookLoginBuddy.SharedProject\FacebookLoginBuddy.SharedProject.projitems*{21f9bf7c-3dbd-4b44-ae23-331045e80ecd}*SharedItemsImports = 13
+		FacebookLoginBuddy.SharedProject\FacebookLoginBuddy.SharedProject.projitems*{d6881f93-23fb-402e-92c1-f761fbcd4769}*SharedItemsImports = 4
+		FacebookLoginBuddy.SharedProject\FacebookLoginBuddy.SharedProject.projitems*{dd82cc04-bb25-407a-b3b8-40573ce70f0b}*SharedItemsImports = 4
+		FacebookLoginBuddy.SharedProject\FacebookLoginBuddy.SharedProject.projitems*{e71f3053-056c-4381-9638-048ed73bdff6}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6881F93-23FB-402E-92C1-F761FBCD4769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6881F93-23FB-402E-92C1-F761FBCD4769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6881F93-23FB-402E-92C1-F761FBCD4769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6881F93-23FB-402E-92C1-F761FBCD4769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD82CC04-BB25-407A-B3B8-40573CE70F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD82CC04-BB25-407A-B3B8-40573CE70F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD82CC04-BB25-407A-B3B8-40573CE70F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD82CC04-BB25-407A-B3B8-40573CE70F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05AA914B-272A-4BF9-B947-C081E2F14700}
+	EndGlobalSection
+EndGlobal

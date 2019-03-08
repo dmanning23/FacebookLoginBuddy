@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>FacebookLoginBuddy</id>
+		<version>2.0.0</version>
+		<title>FacebookLoginBuddy</title>
+		<authors>dmanning23</authors>
+		<owners>dmanning23</owners>
+		<projectUrl>https://github.com/dmanning23/FacebookLoginBuddy</projectUrl>
+		<licenseUrl>https://github.com/dmanning23/FacebookLoginBuddy/blob/master/LICENSE.txt</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Authentication wrapper around the PlayFab Xamarin client SDK</description>
+		<releaseNotes />
+		<copyright>Copyright 2016</copyright>
+		<tags>android, ios, windows universal, monogame, xamarin</tags>
+		<dependencies>
+
+			<!--Xamarin.Android-->
+			<group targetFramework="MonoAndroid10">
+				<dependency id="Plugin.CurrentActivity" version="2.1"/>
+				<dependency id="Xamarin.Facebook.Android" version="4.38"/>
+			</group>
+
+			<!--Xamarin.iOS Unified-->
+			<group targetFramework="Xamarin.iOS10">
+				<dependency id="Xamarin.Facebook.iOS" version="4.39"/>
+			</group>
+
+
+			<group targetFramework="net451">
+			</group>
+
+		</dependencies>
+	</metadata>
+	<files>
+
+		<!--Xamarin.Android-->
+		<file src="FacebookLoginBuddy.Android\bin\Release\FacebookLoginBuddy.Android.pdb" target="lib\MonoAndroid10\FacebookLoginBuddy.Android.pdb" />
+		<file src="FacebookLoginBuddy.Android\bin\Release\FacebookLoginBuddy.Android.dll" target="lib\MonoAndroid10\FacebookLoginBuddy.Android.dll" />
+
+		<!--Xamarin.iOS Unified-->
+		<file src="FacebookLoginBuddy.iOS\bin\Release\FacebookLoginBuddy.iOS.pdb" target="lib\Xamarin.iOS10\FacebookLoginBuddy.iOS.pdb" />
+		<file src="FacebookLoginBuddy.iOS\bin\Release\FacebookLoginBuddy.iOS.dll" target="lib\Xamarin.iOS10\FacebookLoginBuddy.iOS.dll" />
+		
+		<!--WindowsDX-->
+		<file src="FacebookLoginBuddy.WindowsDX\bin\Release\FacebookLoginBuddy.WindowsDX.pdb" target="lib\net451\FacebookLoginBuddy.WindowsDX.pdb" />
+		<file src="FacebookLoginBuddy.WindowsDX\bin\Release\FacebookLoginBuddy.WindowsDX.dll" target="lib\net451\FacebookLoginBuddy.WindowsDX.dll" />
+
+	</files>
+</package>
