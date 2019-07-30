@@ -131,8 +131,8 @@ namespace FacebookLoginLib.iOS
 			}
 
 			LoginManager.LogOut();
-			LoginManager.LoginBehavior = LoginBehavior.SystemAccount;
-			LoginManager.LogInWithReadPermissions(new string[] { "public_profile", "email" }, vc, OnLoginHandler);
+			LoginManager.LoginBehavior = LoginBehavior.Browser;
+			LoginManager.LogIn(new string[] { "public_profile", "email" }, vc, OnLoginHandler);
 		}
 
 		public void Logout()
